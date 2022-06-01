@@ -1,10 +1,11 @@
 import './App.css';
-import { Footer } from './Footer/Footer';
+import { Home } from './home/Home';
+import i18n from'./i18n'
 
 function App() {
   return (
     <div className="App">
-      <Footer/>
+      <Home/>
     </div>
   );
 }

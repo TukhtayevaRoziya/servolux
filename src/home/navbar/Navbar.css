@@ -1,0 +1,13 @@
+.jAVSlF{
+  font-family: CeraPro;
+  --swiper-theme-color: #007aff;
+  box-sizing: border-box;
+  margin-left: auto;
+  z-index: 10;
+  cursor: pointer;
+  position: fixed;
+  width: 8.33333vw;
+  height: 11.2037vh;
+  right: 0px;
+  top: 0px;
+}
