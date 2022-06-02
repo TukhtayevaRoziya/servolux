@@ -16,11 +16,12 @@ export const Navbar = () => {
   };
 
   return (
-    <>
+    <div className='navbarB'>
       <Space>
-        <Button type="primary" onClick={showDrawer}>
-          Open
-        </Button>
+        <div className='openBtn' onClick={showDrawer}>
+          <div></div>
+          <div></div>
+        </div>
       </Space>
       <Drawer
         title=""
@@ -35,6 +36,6 @@ export const Navbar = () => {
           <p>HOLDING</p>
         </div>
       </Drawer>
-    </>
+    </div>
   );
 };

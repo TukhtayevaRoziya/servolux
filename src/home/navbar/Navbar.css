@@ -1,4 +1,4 @@
-.jAVSlF{
+.jAVSlF {
   font-family: CeraPro;
   --swiper-theme-color: #007aff;
   box-sizing: border-box;
@@ -10,4 +10,40 @@
   height: 11.2037vh;
   right: 0px;
   top: 0px;
+}
+
+.openBtn {
+  width: 50px;
+  height: 5px;
+  padding: 2rem 0 ;
+  cursor: pointer;
+  transition: .5s all linear;
+}
+
+.openBtn:hover div:first-child{
+  margin: 0 0 15px 0;
+}
+
+.openBtn:hover div:last-child{
+  margin: 15px 0 0 0 ;
+
+}
+
+.openBtn div {
+  border-bottom: 3px solid #fff;
+  transition: .5s all linear;
+
+}
+
+.openBtn div:last-child {
+  margin-top: 5px;
+}
+
+.navbarB {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100vh;
+  border-left: 2px solid #fff;
 }

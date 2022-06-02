@@ -7,17 +7,18 @@ import { Navbar } from "./navbar/Navbar";
 import i18n from "./../i18n";
 import "./Home.css";
 import "aos/dist/aos.css";
+import { NavLink } from "react-router-dom";
+import { NavHashLink } from "react-router-hash-link";
 
 export const Home = () => {
   useEffect(() => {
     AOS.init();
-    AOS.refresh()
-  }, []);
-  window.addEventListener('load', AOS.refresh)
-  if (document.readyState == 'complete') 
-{
     AOS.refresh();
-}
+  }, []);
+  window.addEventListener("load", AOS.refresh);
+  if (document.readyState == "complete") {
+    AOS.refresh();
+  }
   const { t, i18n2 } = useTranslation();
 
   const [classN, setClassN] = useState("en");
@@ -29,9 +30,10 @@ export const Home = () => {
       console.log(`Language change to ${ln}`);
     };
   };
+  console.log(  document.location.hash === "#activity");
   return (
     <div className="container">
-      <div className="page">
+      <div className="page" id="company">
         <VideoPlayer
           className="video"
           src={
@@ -58,21 +60,44 @@ export const Home = () => {
                   fill="#fff"
                 ></path>
               </svg>
+              <div className="navbarLinks">
+                <NavHashLink
+                  exact
+                  to="#company"
+                  className={
+                    document.location.hash === "/#company" ? "actived" : " "
+                  }
+                >
+                  Company
+                </NavHashLink>
+                <NavHashLink
+                  exact
+                  to="#activity"
+                  className={
+                    document.location.hash === "/#activity"
+                      ? "actived"
+                      : " "
+                  }
+                >
+                  Activity
+                </NavHashLink>
+                <NavHashLink to="/vbcb" className={document.location.hash === '/vbcb' ? "actived" : " "}>Company</NavHashLink>
+              </div>
             </div>
             <div className="mainBlock">
               <div className="header">
                 <div className="language">
                   <button
-                    className={classN === "en" ? classN : ""}
-                    onClick={changeLanguage("en")}
-                  >
-                    En
-                  </button>
-                  <button
                     className={classN === "ru" ? classN : ""}
                     onClick={changeLanguage("ru")}
                   >
                     Ru
+                  </button>
+                  <button
+                    className={classN === "en" ? classN : ""}
+                    onClick={changeLanguage("en")}
+                  >
+                    En
                   </button>
                   <button
                     className={classN === "cn" ? classN : ""}
@@ -81,25 +106,26 @@ export const Home = () => {
                     Cn
                   </button>
                 </div>
-                <h1>FULL CYCLE AGROINDUSTRIAL HOLDING</h1>
-                <Navbar />
+                <h1>{t("navbarTitle")}</h1>
               </div>
+
               <div className="divTexts">
-                <h1 data-aos="fade-down" data-aos-duration="1000" >
-                  AGRO
-                </h1>
-                <span data-aos="fade-down" data-aos-delay="300">
-                  PROM
-                </span>
-                <span data-aos="fade-down" data-aos-delay="300">
-                  HOLDING
-                </span>
+                <div data-aos="fade-left" data-aos-delay="2000">
+                  {t("AGRO")}
+                </div>
+                <div data-aos="fade-left" data-aos-delay="2500">
+                  {t("PROM")}
+                </div>
+                <div data-aos="fade-left" data-aos-delay="3000">
+                  {t("HOLDING")}
+                </div>
               </div>
             </div>
+            <Navbar />
           </div>
         </div>
       </div>
-      <div className="page">
+      <div className="page" id="activity">
         <div className="text text--random" data-scroll="out" data-splitting="">
           Random
         </div>
