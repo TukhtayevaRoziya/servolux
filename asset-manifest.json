@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/servolux/static/css/main.d21c97f7.css",
+    "main.js": "/servolux/static/js/main.22809c75.js",
+    "static/js/787.af3fc868.chunk.js": "/servolux/static/js/787.af3fc868.chunk.js",
+    "static/media/3.jpg": "/servolux/static/media/3.7a18ae7c26b52114ed4d.jpg",
+    "static/media/2.jpg": "/servolux/static/media/2.ad690a4b2196336b16db.jpg",
+    "static/media/1.jpg": "/servolux/static/media/1.95587ad884b6454cbcf5.jpg",
+    "index.html": "/servolux/index.html",
+    "main.d21c97f7.css.map": "/servolux/static/css/main.d21c97f7.css.map",
+    "main.22809c75.js.map": "/servolux/static/js/main.22809c75.js.map",
+    "787.af3fc868.chunk.js.map": "/servolux/static/js/787.af3fc868.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d21c97f7.css",
+    "static/js/main.22809c75.js"
+  ]
+}
