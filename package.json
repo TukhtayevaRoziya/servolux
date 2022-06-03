@@ -2,12 +2,14 @@
   "name": "cyber",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://TukhtayevaRoziya.github.io/servolux",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
     "@testing-library/user-event": "^13.5.0",
     "antd": "^4.20.7",
     "aos": "^2.3.4",
+    "gh-pages": "^4.0.0",
     "i18next": "^21.8.5",
     "react": "^18.0.0",
     "react-background-video-player": "^1.1.8",
@@ -26,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
