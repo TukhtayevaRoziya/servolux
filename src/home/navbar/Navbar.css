@@ -47,3 +47,15 @@
   height: 100vh;
   border-left: 2px solid #fff;
 }
+
+
+@media (min-width:0) and (max-width:1000.9px) {
+  .navbarB{
+    width: 100px;
+    border: none;
+  }
+
+  .openBtn{
+    width: 30px;
+  }
+}

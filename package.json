@@ -13,12 +13,16 @@
     "react-background-video-player": "^1.1.8",
     "react-dom": "^18.0.0",
     "react-i18next": "^11.16.9",
+    "react-id-swiper": "^4.0.0",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
     "react-scripts": "5.0.1",
+    "swiper": "^8.0.0",
+    "vite": "^2.9.9",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "dev": "vite",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -41,5 +45,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "tags": [
+    "swiper"
+  ]
 }

@@ -2,5 +2,9 @@
   "AGRO": "AGRO",
   "PROM": "PROM",
   "HOLDING": "HOLDING",
-  "navbarTitle":"FULL CYCLE AGROINDUSTRIAL HOLDING"
+  "navbarTitle":"FULL CYCLE AGROINDUSTRIAL HOLDING",
+  "aboutBtn": "About Company",
+  "navbar1": "Company",
+  "navbar2": "Ecosystem",
+  "navbar3": "Responsibility"
 }

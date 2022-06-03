@@ -2,5 +2,9 @@
   "AGRO": "农工",
   "PROM": "实业",
   "HOLDING": "集团",
-  "navbarTitle":"封闭式生产循环的农工实业集团"
+  "navbarTitle":"封闭式生产循环的农工实业集团",
+  "aboutBtn": "关于公司",
+  "navbar1": "企业简介",
+  "navbar2": "活动范围",
+  "navbar3": "生态系统"
 }

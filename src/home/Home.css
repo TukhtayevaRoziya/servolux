@@ -4,7 +4,7 @@
 }
 body {
   font-family: "Lato", sans-serif;
-  background:darkblue;
+  background: #007aff;
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -13,6 +13,10 @@ body {
   width: 100%;
   display: flex;
   height: 100%;
+}
+
+.smLogo{
+  display: none;
 }
 
 .logo {
@@ -58,7 +62,6 @@ body {
   color: #fff;
   font-size: 3rem;
   text-align: center;
-  background-color: darkblue;
 }
 
 .text {
@@ -87,6 +90,7 @@ body {
   margin-top: 3rem;
   margin-right: 20%;
   color: #fff;
+  margin-left: auto;
 }
 
 .mainBlock {
@@ -98,6 +102,7 @@ body {
   width: 20%;
   margin-top: -1rem;
   z-index: 10;
+  position: fixed;
 }
 
 .language button {
@@ -144,7 +149,7 @@ body {
 }
 
 .actived,
-.logo a:hover{
+.logo a:hover {
   color: #fff !important;
 }
 
@@ -172,14 +177,182 @@ body {
   cursor: pointer;
   transition: color 0.5s ease 0s;
   font-size: calc(16px + (2 * (100vw - 1400px)) / 520);
-  color: rgba(255, 255, 255, 0.5) ;
+  color: rgba(255, 255, 255, 0.5);
 }
 
-.navbarLinks{
+.navbarLinks {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 100%;
+}
+.Aboutbtn {
+  color: rgb(255, 255, 255);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-weight: 800;
+  font-size: calc(14px + (2 * (100vw - 1400px)) / 520);
+  padding: 1.85185vh 2.08333vw;
+  background-color: transparent;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out 0s, border 0.4s ease-in-out 0s,
+    color 0.4s ease-in-out 0s, opacity 0.6s ease 0s, visibility 0.6s ease 0s;
+  margin-top: 20%;
+  margin-left: 30%;
+}
+
+.Aboutbtn:hover {
+  border-color: rgb(56, 119, 238);
+  background: rgb(56, 119, 238);
+}
+
+#activity {
+  background-image: url(../assets/home/1.jpg);
+}
+
+.ecoSystem__body_texts {
+  background: url(../assets/home/bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+
+  padding-top: 7%;
+  width: 100%;
+  height: 100vh;
+  transition: background-size 0.5s ease-in-out 0s, transform 4s ease-out 0.25s;
+}
+
+.ecoSystem {
+  width: 30%;
+  background-image: url(../assets/home/2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 100vh;
+  transition: background-size 0.5s ease-in-out 0s, transform 4s ease-out 0.25s;
+}
+
+.ecoSystem:hover .ecoSystem__body_texts {
+  background-size:  100% 0;
+}
+
+.ecoSystem__body{
+  display: flex;
+  background-color: #fff;
+  margin-left: 19%;
+
+}
+
+.ecoSystem h1 {
+  --swiper-theme-color: #007aff;
+  pointer-events: unset;
+  list-style: none;
+  box-sizing: border-box;
+  text-transform: inherit;
+  text-decoration: inherit;
+  margin: 0px;
+  font-weight: 800;
+  line-height: 1.1;
+  font-size: calc(38px + (18 * (100vw - 1400px)) / 520);
+  margin-top: auto;
+  color: rgb(66, 86, 122);
+  position: absolute;
+  top: 15.7407vh;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out 1.3s, width 0.8s ease-out 1.3s,
+    padding-left 0.8s ease-out 1.3s, color 0.4s ease 0.2s;
+  width: 25vw;
+  padding-left: 0;
+}
+
+.ecoSystem h1::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 5px;
+  height: 100%;
+  background: linear-gradient(rgb(56, 119, 238) -5%, rgb(125, 201, 99) 85%);
+  transition: opacity 0.4s ease 0.2s;
+  left: 0%;
+}
+
+.ecoSystem__texts {
+  margin: 50% 0 20% 13%;
+}
+
+.ecoSystem__texts span,
+.ecoSystem__texts p,
+.ecoSystem__texts h3 {
+  margin: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.ecoSystem__texts span {
+  --swiper-theme-color: #007aff;
+  pointer-events: unset;
+  list-style: none;
+  box-sizing: border-box;
+  text-transform: inherit;
+  text-decoration: inherit;
+  margin: 0px;
+  color: rgba(56, 119, 238, 0.6);
+  font-weight: 800;
+  line-height: 0.72;
+  transition: color 0.3s ease 0s;
+  font-size: calc(36px + (14 * (100vw - 1400px)) / 520);
+  display: block;
+  padding-bottom: 5.55556vh;
+}
+
+.ecoSystem__texts p {
+  --swiper-theme-color: #007aff;
+  pointer-events: unset;
+  list-style: none;
+  box-sizing: border-box;
+  font-weight: inherit;
+  text-transform: inherit;
+  text-decoration: inherit;
+  margin: 0px;
+  position: relative;
+  color: rgb(66, 86, 122);
+  line-height: 1.8;
+  font-size: calc(16px + (4 * (100vw - 1400px)) / 520);
+  margin-top: 0px;
+  padding-bottom: 1.2037vh;
+}
+
+.ecoSystem__texts p::before {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: rgba(106, 191, 75, 0.5);
+  transition: background 0.3s ease 0s;
+}
+
+.ecoSystem__texts h3 {
+  --swiper-theme-color: #007aff;
+  pointer-events: unset;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: inherit;
+  margin: 0px;
+  -webkit-box-align: center;
+  align-items: center;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: opacity 0.6s ease-in-out 0s;
+  font-size: calc(20px + (9 * (100vw - 1400px)) / 520);
+  display: block;
+  width: unset;
+  height: unset;
+  opacity: 1;
+  padding: 0px;
+  color: rgb(66, 86, 122);
+  margin-top: 2.77778vh;
 }
 
 @media (min-width: 768px) {
@@ -338,4 +511,126 @@ body {
 }
 .text--flipping [data-scroll="out"] .char {
   transform: rotateY(180deg);
+}
+
+.businessPage__body{
+  background-image: url(../assets/home/3.jpg);
+  background-size: cover;
+  padding-left: 20%;
+  padding-top: 20%;
+  padding-right: 3rem;
+  height: 100vh;
+
+}
+
+.businessPage{
+  display: flex;
+  justify-content: space-around;
+}
+.businessPage h1{
+  font-size: calc(38px + (18 * (100vw - 1400px)) / 520);
+  font-weight: 800;
+  line-height: 1.1;
+  color: #fff;
+}
+
+.businessPage div p{
+  font-size: calc(16px + (4 * (100vw - 1400px)) / 520);
+}
+
+.businessPage div{
+  width: 30%;
+}
+
+.businessPage div button{
+  margin: 0;
+}
+
+.businessPageBoxes{
+  display: flex;
+}
+
+.businessPageBox{
+  display: flex;
+  align-items: center;
+  width: 25%;
+  padding: 1rem;
+  position: relative;
+  background-image: url(../assets/home/boxBg.png);
+  background-repeat: no-repeat;
+  background-size: 0 100%;
+  transition: background 0.3s ease 0s;
+
+}
+
+.businessPageBox:hover{
+  background-size: 100% 100%;
+}
+
+.businessPageBox h1{
+  font-size: calc(14px + (2 * (100vw - 1400px)) / 520);
+  margin:  0 15px 0 1rem;
+  color: #fff;
+  z-index: 10;
+}
+
+.businessPageBox p{
+  font-size: calc(18px + (7 * (100vw - 1400px)) / 520);
+  margin: 0;
+  width: 50%;
+  text-align: left;
+  z-index: 10;
+
+}
+
+@media (min-width:0) and (max-width:1000.9px) {
+  .smLogo{
+    display: inherit;
+  }
+  .logo{
+    display: none;
+  }
+  .language,
+  .header h1{
+    display: none;
+  }
+
+  .divTexts{
+    width: 100%;
+    margin: 30% 0 0 2rem !important;
+
+  }
+
+  .mainBlock{
+    margin-left: 0;
+    width: 80%;
+  }
+
+  .divTexts div{
+    font-size: 60px;
+    height: 70px;
+    margin: 0 !important;
+  }
+
+  .Aboutbtn{
+    margin-right: 40%;
+    margin-left: 0;
+    width: 200px;
+  }
+
+  .ecoSystem__body{
+    margin-left: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .ecoSystem{
+    width: 48%;
+    height: calc(100vh / 2 - 20px);
+  }
+
+  .ecoSystem__body_texts{
+    background-size: 0 0;
+  }
 }
